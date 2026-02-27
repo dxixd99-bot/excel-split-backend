@@ -1,5 +1,8 @@
-flask==2.3.3
-flask-cors==4.0.0
-pandas==2.1.4
-openpyxl==3.1.2
-gunicorn==21.2.0
+# 核心依赖
+gunicorn>=20.1.0
+# 稳定的 pandas 版本（适配 Python 3.11/3.12）
+pandas==2.2.2
+# 如果用了 Flask，加上
+flask>=2.0.0
+# 如果用了 numpy（pandas 依赖），也可以固定
+numpy==1.26.4
